@@ -1,0 +1,118 @@
+
+:root {
+    --primary-yellow: #f8c000;
+    --secondary-yellow: #e5cd03;
+    --white: #ffffff;
+    --light-gray: #f0f0f0;
+    --dark-gray: #333333;
+    --text-color: #555555;
+    --button-hover: #e0a800;
+    --bs-primary: var(--primary-yellow);
+    --bs-primary-rgb: 248, 192, 0;
+    --bs-secondary: #6c757d;
+    --bs-border-color: #ddd;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    font-family: var(--bs-body-font-family);
+    background-color: var(--secondary-yellow);
+    overflow: hidden;
+    }
+    .background-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.05) 2px, transparent 1px);
+    background-size: 20px 20px;
+    background-color: var(--secondary-yellow);
+    opacity: 0.9;
+    z-index: 0;
+    } 
+    .login-box {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    z-index: 1;
+    }
+    .logo h1 {
+    font-size: 2.2em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    }
+    .welcome-message {
+    font-size: 1.1em;
+    color: var(--text-color);
+    }
+    .form-control:focus {
+    border-color: var(--primary-yellow);
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+    }
+    .btn-primary {
+    background-color: var(--primary-yellow);
+    border-color: var(--primary-yellow);
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+    .btn-primary:hover {
+    background-color: var(--button-hover);
+    border-color: var(--button-hover);
+    }
+    .forgot-password {
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+    }
+    .forgot-password:hover {
+    color: var(--primary-yellow) !important;
+    }
+    .or-text {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    }
+    .btn-outline-secondary {
+    border-color: var(--bs-border-color);
+    color: var(--text-color);
+    font-size: 1em;
+    font-weight: bold;
+    }
+    .btn-outline-secondary:hover {
+    background-color: var(--light-gray);
+    border-color: #ccc;
+    color: var(--text-color);
+    }
+    .first-time {
+    font-size: 0.95em;
+    }
+    .register-link {
+    font-size: 1em;
+    transition: color 0.3s ease;
+    }
+    .register-link:hover {
+    color: var(--button-hover) !important;
+    }
+    @media (max-width: 480px) {
+    .login-box {
+    padding: 30px 20px;
+    margin: 15px;
+    }
+    .logo img {
+    width: 70px;
+    }
+    .logo h1 {
+    font-size: 1.8em;
+    }
+    .welcome-message,
+    .forgot-password,
+    .first-time,
+    .register-link {
+    font-size: 0.9em;
+    }
+    }
